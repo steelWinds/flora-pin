@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@composables/*": ["./src/composables/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/assets/styles/*"],
+      "@helpers/*": ["./src/helpers/*"],
+    },
     "strict": true,
-    "module": "ES2020",
+    "module": "esnext",
     "moduleResolution": "Node",
     "target": "ES2017",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

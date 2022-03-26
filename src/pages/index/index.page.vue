@@ -8,5 +8,8 @@
 </template>
 
 <script lang="ts" setup>
-import Counter from './Counter.vue'
+import {defineAsyncComponent} from 'vue';
+
+const Counter =
+  defineAsyncComponent(() => import('@components/Counter.vue'));
 </script>

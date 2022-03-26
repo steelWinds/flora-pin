@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "npm run server",
-    "prod": "npm run build && npm run server:prod",
+    "dev": "pnpm run server",
+    "prod": "pnpm run build && pnpm run server:prod",
     "build": "vite build && vite build --ssr",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server"
@@ -21,5 +21,17 @@
     "vite": "^2.8.4",
     "vite-plugin-ssr": "^0.3.60",
     "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@testing-library/vue": "^6.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "autoprefixer": "^10.4.4",
+    "eslint": "^8.12.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "vitest": "^0.7.11"
   }
 }
